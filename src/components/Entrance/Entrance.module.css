@@ -1,0 +1,48 @@
+.enter {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.login:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.login svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.login p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #121417;
+}
+
+.registration {
+  width: 166px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #121417;
+  color: #fff;
+  margin-left: 16px;
+  transition: 0.3s;
+}
+
+.registration:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
