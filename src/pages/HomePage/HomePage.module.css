@@ -1,0 +1,209 @@
+.homePageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.startBox {
+  display: flex;
+  gap: 24px;
+}
+
+.getStartedBox {
+  width: 720px;
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 98px 64px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.title span {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  position: relative;
+  margin-left: 10px;
+  z-index: 2;
+}
+
+.titleMark {
+  width: 195px;
+  height: 40px;
+  position: absolute;
+  bottom: 5px;
+  left: 180px;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.titleMark1 {
+  background-color: var(--main-color-light);
+}
+.titleMark2 {
+  background-color: var(--green-color-light);
+}
+.titleMark3 {
+  background-color: var(--blue-color-light);
+}
+.titleMark4 {
+  background-color: var(--red-color-light);
+}
+.titleMark5 {
+  background-color: var(--orange-color-light);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.signUpBtn {
+  width: 267px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 64px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.signUpBtn1 {
+  background-color: var(--main-color);
+}
+.signUpBtn2 {
+  background-color: var(--green-color);
+}
+.signUpBtn3 {
+  background-color: var(--blue-color);
+}
+.signUpBtn4 {
+  background-color: var(--red-color);
+}
+.signUpBtn5 {
+  background-color: var(--orange-color);
+}
+
+.signUpBtn1:hover {
+  background-color: var(--main-color-hover);
+}
+.signUpBtn2:hover {
+  background-color: var(--green-color-light);
+}
+.signUpBtn3:hover {
+  background-color: var(--blue-color-light);
+}
+.signUpBtn4:hover {
+  background-color: var(--red-color-light);
+}
+.signUpBtn5:hover {
+  background-color: var(--orange-color-light);
+}
+
+.girl {
+  width: 568px;
+  height: 530px;
+}
+
+.girl1 {
+  background: url(../../assets/images/girl-yellow.png);
+}
+
+.girl2 {
+  background: url(../../assets/images/girl-green.png);
+}
+
+.girl3 {
+  background: url(../../assets/images/girl-blue.png);
+}
+
+.girl4 {
+  background: url(../../assets/images/girl-red.png);
+}
+
+.girl5 {
+  background: url(../../assets/images/girl-orange.png);
+}
+
+.statsWrap {
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 24px;
+  border-radius: 30px;
+  padding: 40px 0;
+  background: url(../../assets/borders/border-yellow.png);
+}
+
+.statsWrap1 {
+  background: url(../../assets/borders/border-yellow.png);
+}
+.statsWrap2 {
+  background: url(../../assets/borders/border-green.png);
+}
+.statsWrap3 {
+  background: url(../../assets/borders/border-blue.png);
+}
+.statsWrap4 {
+  background: url(../../assets/borders/border-red.png);
+}
+.statsWrap5 {
+  background: url(../../assets/borders/border-orange.png);
+}
+
+.statBox {
+  display: flex;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.statBox span {
+  display: block;
+  max-width: 96px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #121417b2;
+  margin-left: 16px;
+}

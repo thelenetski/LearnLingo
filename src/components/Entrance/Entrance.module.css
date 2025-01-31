@@ -18,6 +18,23 @@
   width: 20px;
   height: 20px;
   margin-right: 8px;
+  stroke: var(--main-color);
+}
+
+.login1 svg {
+  stroke: var(--main-color);
+}
+.login2 svg {
+  stroke: var(--green-color);
+}
+.login3 svg {
+  stroke: var(--blue-color);
+}
+.login4 svg {
+  stroke: var(--red-color);
+}
+.login5 svg {
+  stroke: var(--orange-color);
 }
 
 .login p {
@@ -45,4 +62,21 @@
 .registration:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.helloLogin {
+  font-weight: 600;
+  border-right: 2px solid #121417;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.logOut {
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.logOut:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }

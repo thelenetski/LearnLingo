@@ -1,0 +1,23 @@
+.filterItemWrap {
+  position: relative;
+}
+.filterItemWrap .filterItem {
+  min-width: 124px;
+}
+
+.filterItemWrap svg {
+  width: 12px;
+  fill: #121417;
+}
+
+/* .filterItem option {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #12141733;
+} */
+
+/* .filterItem option:hover {
+  background: none;
+  color: #121417;
+} */

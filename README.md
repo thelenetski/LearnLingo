@@ -1,8 +1,34 @@
-# React + Vite
+# Learn Lingo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис проєкту
 
-Currently, two official plugins are available:
+**Learn Lingo** — це сучасний веб-додаток, створений для зручного відображення,навігації та наймання вчителів різних мов. Проєкт базується на Vite, що забезпечує швидке завантаження, оптимізацію та сучасний стек розробки.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Основні функції
+
+- **Список вчителів**: можливість переглядати список вчителів.
+- **Сортування та фільтрація**: інструменти для зручного пошуку потрібних елементів.
+- **Реактивний інтерфейс**: швидкі переходи між сторінками без оновлення.
+- **Обране**: Можливість додавати вчителів у обране для зареєстрованих користувачів
+
+## Технології
+
+- **React** — основа інтерфейсу.
+- **Vite** — для швидкої збірки та розробки.
+- **CSS-модулі** — для компонентної стилізації.
+
+---
+
+## Інструкції з установки
+
+### Вимоги:
+
+- **Node.js** (версія 16 або вище).
+- Менеджер пакетів **npm** або **yarn**.
+
+### Установка
+
+1. Клонуйте репозиторій проєкту:
+   ```bash
+   git clone https://github.com/thelenetski/LearnLingo
+   ```

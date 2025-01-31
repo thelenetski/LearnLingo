@@ -1,0 +1,172 @@
+.bookingContainer {
+  width: 472px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #121417cc;
+}
+
+.teacher {
+  height: 44px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.teacher img {
+  border-radius: 100%;
+  margin-right: 14px;
+}
+
+.teacher span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #8a8a89;
+}
+
+.teacher p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+form h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/* Стили для радио-кнопок */
+.radioBtn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.radioBtn label {
+  display: flex;
+}
+
+.radioBtn label:hover {
+  cursor: pointer;
+}
+
+.radioBtn input[type="radio"] {
+  appearance: none; /* Убираем стандартный стиль */
+  width: 16px;
+  height: 16px;
+  border: 2px solid #b8b8b8;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+.radioBtn input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.radioBtn input[type="radio"]:checked {
+  background-color: #fff;
+  border: 2px solid #f4c550;
+}
+
+.radioBtn input[type="radio"]::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radioBtn input[type="radio"]:checked::before {
+  background-color: var(--main-color);
+}
+
+.formGroupWrap {
+  margin-top: 40px;
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #1214171a;
+  border-radius: 12px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #121417;
+  transition: 0.3s;
+}
+
+.input::placeholder {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #121417;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #1214176e;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.bookingButton {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: 0.3s;
+}
+
+.bookingButton:hover {
+  background-color: var(--main-color-hover);
+}

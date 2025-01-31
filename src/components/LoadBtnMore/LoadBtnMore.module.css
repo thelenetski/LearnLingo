@@ -1,0 +1,28 @@
+.loadBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.loadBtn button {
+  width: 183px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color);
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  transition: 0.3s;
+}
+
+.loadBtn button:hover {
+  cursor: pointer;
+  transform: scaleX(1.05);
+}

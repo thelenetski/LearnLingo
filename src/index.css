@@ -16,9 +16,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #121417;
 
   --main-color: #f4c550;
   --main-color-light: #fbe9ba;
+  --main-color-hover: #ffdc86;
 
   --green-color: #9fbaae;
   --green-color-light: #cbded3;
@@ -31,4 +33,18 @@ body {
 
   --orange-color: #f0aa8d;
   --orange-color-light: #f4c8ba;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

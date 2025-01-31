@@ -41,10 +41,9 @@ header h1 {
 }
 
 .nav {
-  width: 138px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 28px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -63,4 +62,8 @@ header h1 {
 
 .nav .link:hover {
   color: #1214179a;
+}
+
+.active {
+  color: var(--main-color) !important;
 }

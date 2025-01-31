@@ -4,6 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const modalTypes = {
   login: "login",
   registration: "registration",
+  booking: "booking",
 };
 
 const modalSlice = createSlice({
@@ -22,6 +23,11 @@ const modalSlice = createSlice({
     openRegistration(state, action) {
       state.isOpen = true;
       state.type = modalTypes.registration;
+      state.content = action.payload;
+    },
+    openBooking(state, action) {
+      state.isOpen = true;
+      state.type = modalTypes.booking;
       state.content = action.payload;
     },
     closeModal(state) {
@@ -46,5 +52,6 @@ const modalSlice = createSlice({
 });
 
 // Експортуємо генератори екшенів та редюсер
-export const { openLogin, openRegistration, closeModal } = modalSlice.actions;
+export const { openLogin, openRegistration, openBooking, closeModal } =
+  modalSlice.actions;
 export const modalReducer = modalSlice.reducer;
