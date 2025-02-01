@@ -75,8 +75,8 @@ const TeachersPage = () => {
         .unwrap()
         .then((data) => {
           if (data) {
-            setArticles((prev) => [...prev, ...data.teachers]); // Добавляем новые данные к существующим
-            setCurrentPage((prev) => prev + 1); // Увеличиваем текущую страницу
+            setArticles((prev) => [...prev, ...data.teachers]);
+            setCurrentPage((prev) => prev + 1);
           }
         })
         .catch((error) => console.error(error));

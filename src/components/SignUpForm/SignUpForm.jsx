@@ -107,7 +107,7 @@ const SignUpForm = () => {
         </div>
 
         <button type="submit" className={css.signUpButton}>
-          {loading.signUp ? "Loading" : "Sign Up"}
+          {loading.signUp ? "Loading..." : "Sign Up"}
         </button>
       </form>
     </div>

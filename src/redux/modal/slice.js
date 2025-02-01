@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, isAnyOf } from "@reduxjs/toolkit";
+import { signIn, signUp } from "../auth/operations";
 // import {login, registration} from './auth/operation'
 
 export const modalTypes = {
@@ -36,19 +37,13 @@ const modalSlice = createSlice({
       state.content = null;
     },
   },
-  // extraReducers: (builder) => {
-  //   builder.addMatcher(
-  //     isAnyOf(
-  //       login.fulfilled,
-  //       registration.fulfilled
-  //     ),
-  //     (state) => {
-  //       state.isOpen = false;
-  //       state.type = null;
-  //       state.content = null;
-  //     }
-  //   );
-  // },
+  extraReducers: (builder) => {
+    builder.addMatcher(isAnyOf(signIn.fulfilled, signUp.fulfilled), (state) => {
+      state.isOpen = false;
+      state.type = null;
+      state.content = null;
+    });
+  },
 });
 
 // Експортуємо генератори екшенів та редюсер
