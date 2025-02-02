@@ -1,6 +1,5 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
 import { signIn, signUp } from "../auth/operations";
-// import {login, registration} from './auth/operation'
 
 export const modalTypes = {
   login: "login",

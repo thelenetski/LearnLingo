@@ -1,4 +1,3 @@
-// import clsx from "clsx";
 import { useDispatch, useSelector } from "react-redux";
 import css from "./Entrance.module.css";
 import sprite from "/sprite.svg";

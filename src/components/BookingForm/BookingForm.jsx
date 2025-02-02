@@ -41,8 +41,7 @@ const BookingForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
     dispatch(closeModal());
     toast.success("Booking successfully!");
   };

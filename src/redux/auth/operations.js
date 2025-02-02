@@ -4,7 +4,6 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  updatePassword,
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../../firebase";
@@ -90,24 +89,6 @@ export const refreshUser = createAsyncThunk(
           }
         });
       });
-    } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
-    }
-  }
-);
-
-// Обновление пароля пользователя (опционально)
-export const updateUserPassword = createAsyncThunk(
-  "auth/updatePassword",
-  async ({ newPassword }, thunkAPI) => {
-    try {
-      const user = auth.currentUser;
-      if (!user) {
-        return thunkAPI.rejectWithValue("User is not logged in.");
-      }
-
-      await updatePassword(user, newPassword);
-      return { message: "Password updated successfully." };
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
