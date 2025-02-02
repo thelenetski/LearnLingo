@@ -21,6 +21,9 @@ const TeachersPage = lazy(() =>
 const FavoritesPage = lazy(() =>
   import("./pages/FavoritesPage/FavoritesPage.jsx")
 );
+const NotFoundPage = lazy(() =>
+  import("./pages/NotFoundPage/NotFoundPage.jsx")
+);
 
 function App() {
   const [randomNumber, setRandomNumber] = useState(null);
@@ -46,6 +49,7 @@ function App() {
               <PrivateRoute component={<FavoritesPage />} redirectTo="/" />
             }
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
       <ModalWindow>
